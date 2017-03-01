@@ -58,7 +58,7 @@ body {
             height: 100%;
             width: 100%;
 
-            &:hover {
+            &:hover, &:focus {
               color: $default-font-color;
               background-color: $darker-background;
               text-decoration: none;

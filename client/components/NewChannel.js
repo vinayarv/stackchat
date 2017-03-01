@@ -7,7 +7,7 @@ export default class NewChannel extends Component {
       <form>
         <div className="form-group">
           <label htmlFor="name">Create a Channel</label>
-          <input className="form-control" type="text" name="name" />
+          <input className="form-control" type="text" name="name" placeholder="Enter channel name" />
         </div>
         <div className="form-group">
           <button type="submit" className="btn btn-default">Create Channel</button>

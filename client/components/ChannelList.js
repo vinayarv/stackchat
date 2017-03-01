@@ -13,13 +13,13 @@ export default class ChannelList extends Component {
         <li>
           <Link to={RANDOM_CHANNEL}>
             <span># really random</span>
-            <span className="badge">8</span>
+            <span className="badge">0</span>
           </Link>
         </li>
         <li>
           <Link to={GENERAL_CHANNEL}>
             <span># generally speaking</span>
-            <span className="badge">2</span>
+            <span className="badge">0</span>
           </Link>
         </li>
         <li>
