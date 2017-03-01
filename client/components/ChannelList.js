@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-const HARDCODED_CHANNEL_VALUE = '/channels/1';
+// hardcoded...for now!
+const RANDOM_CHANNEL = '/channels/1';
+const GENERAL_CHANNEL = '/channels/2';
 
 export default class ChannelList extends Component {
 
@@ -9,13 +11,13 @@ export default class ChannelList extends Component {
     return (
       <ul>
         <li>
-          <Link to={HARDCODED_CHANNEL_VALUE}>
+          <Link to={RANDOM_CHANNEL}>
             <span># really random</span>
             <span className="badge">8</span>
           </Link>
         </li>
         <li>
-          <Link to={HARDCODED_CHANNEL_VALUE}>
+          <Link to={GENERAL_CHANNEL}>
             <span># generally speaking</span>
             <span className="badge">2</span>
           </Link>

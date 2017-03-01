@@ -4,7 +4,8 @@ const Message = require('./server/db/models/message');
 const Channel = require('./server/db/models/channel');
 
 const channels = [
-  { name: 'Favorite pugs' }
+  { name: 'Really random' },
+  { name: 'Generally speaking' }
 ];
 
 const authors = [{
@@ -27,6 +28,9 @@ const authors = [{
 const messages = [
   { authorId: 1, content: 'My favorite pug is Cody', channelId: 1 },
   { authorId: 2, content: 'I also like Cody!', channelId: 1 },
+  { authorId: 3, content: 'I really like puppies', channelId: 2 },
+  { authorId: 4, content: 'I really like React!', channelId: 2 },
+  { authorId: 5, content: 'I really like Redux!', channelId: 2 },
 ];
 
 const seed = () =>

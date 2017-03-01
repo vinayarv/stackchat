@@ -10,21 +10,21 @@ export default class Messages extends Component {
   }
 
   componentDidMount () {
-    const channelId = this.props.routeParams.channelId;
-
-    axios.get(`/api/channels/${channelId}/messages`)
+    axios.get('api/messages')
       .then(res => res.data)
       .then(messages => this.setState({ messages }));
   }
 
   render () {
 
-    const { messages } = this.state;
+    const channelId = Number(this.props.routeParams.channelId); // because it's a string "1", not a number!
+    const messages = this.state.messages;
+    const filteredMessages = messages.filter(message => message.channelId === channelId);
 
     return (
       <div>
         <ul className="media-list">
-          { messages.map(message => <Message message={message} key={message.id} />) }
+          { filteredMessages.map(message => <Message message={message} key={message.id} />) }
         </ul>
         <NewMessage />
       </div>
