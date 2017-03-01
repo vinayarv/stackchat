@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NameEntry from './NameEntry';
 
 export default class Navbar extends Component {
 
@@ -6,9 +7,7 @@ export default class Navbar extends Component {
     return (
       <nav>
         <h3># channelname goes here</h3>
-        <form className="form-group">
-          <input type="text" placeholder="Enter your name" className="form-control" />
-        </form>
+        <NameEntry />
       </nav>
     );
   }
