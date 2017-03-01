@@ -12,8 +12,8 @@ import { Main, Messages, NewChannel } from './components';
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Router path="new-channel" component={NewChannel} />
-      <Router path="channels/:channelId" component={Messages} />
+      <Route path="new-channel" component={NewChannel} />
+      <Route path="channels/:channelId" component={Messages} />
       <IndexRedirect to="channels/1" />
     </Route>
   </Router>,
