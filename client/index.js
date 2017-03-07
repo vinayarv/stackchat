@@ -7,13 +7,13 @@ import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
-import { Main, Messages, NewChannel } from './components';
+import { Main, MessagesList, NewChannelEntry } from './components';
 
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-      <Route path="new-channel" component={NewChannel} />
-      <Route path="channels/:channelId" component={Messages} />
+      <Route path="new-channel" component={NewChannelEntry} />
+      <Route path="channels/:channelId" component={MessagesList} />
       <IndexRedirect to="channels/1" />
     </Route>
   </Router>,

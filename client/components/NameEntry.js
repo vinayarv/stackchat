@@ -15,7 +15,13 @@ export default class NameEntry extends Component {
   render () {
     return (
       <form className="form-group">
-        <input type="text" name="name" placeholder="Enter your name" className="form-control" onChange={this.handleChange} />
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          className="form-control"
+          onChange={this.handleChange}
+        />
       </form>
     );
   }

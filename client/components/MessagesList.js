@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import NewMessage from './NewMessage';
+import Message from './Message';
+import NewMessageEntry from './NewMessageEntry';
 import axios from 'axios';
 
 export default class Messages extends Component {
@@ -26,28 +27,8 @@ export default class Messages extends Component {
         <ul className="media-list">
           { filteredMessages.map(message => <Message message={message} key={message.id} />) }
         </ul>
-        <NewMessage />
+        <NewMessageEntry />
       </div>
     );
   }
-}
-
-// a single message is simple, stateless functional component
-function Message (props) {
-
-  const message = props.message;
-
-  return (
-    <li className="media">
-      <div className="media-left">
-        <a href="#">
-          <img className="media-object" src={message.author.image} alt="image" />
-        </a>
-      </div>
-      <div className="media-body">
-        <h4 className="media-heading">{ message.author.name }</h4>
-        { message.content }
-      </div>
-    </li>
-  );
 }
