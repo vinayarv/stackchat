@@ -1,5 +1,5 @@
 // Whoa?!? What is this?
-// Thanks to the style-loader, style-loader and css-loader, webpack allows us import scss,
+// Thanks to the style-loader, sass-loader and css-loader, webpack allows us import scss,
 // compiles it into css, and then auto-magically injects a <style> tag onto the DOM!
 // Wowzers! Check out the webpack.config.js to see how to add them!
 import './index.scss';
