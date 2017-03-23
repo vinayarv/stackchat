@@ -18,7 +18,7 @@ export default class MessagesList extends Component {
 
   render () {
 
-    const channelId = Number(this.props.routeParams.channelId); // because it's a string "1", not a number!
+    const channelId = Number(this.props.match.params.channelId); // because it's a string "1", not a number!
     const messages = this.state.messages;
     const filteredMessages = messages.filter(message => message.channelId === channelId);
 

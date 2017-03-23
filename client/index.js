@@ -6,16 +6,12 @@ import './index.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
-import { Main, MessagesList, NewChannelEntry } from './components';
+import { HashRouter as Router } from 'react-router-dom';
+import { Main } from './components';
 
 ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path="/" component={Main}>
-      <Route path="new-channel" component={NewChannelEntry} />
-      <Route path="channels/:channelId" component={MessagesList} />
-      <IndexRedirect to="channels/1" />
-    </Route>
+  <Router>
+    <Main />
   </Router>,
   document.getElementById('app')
 );
