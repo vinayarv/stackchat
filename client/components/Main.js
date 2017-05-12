@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import MessagesList from './MessagesList';
-import NewChannelEntry from './NewChannelEntry'
+import NewChannelEntry from './NewChannelEntry';
 
 export default class Main extends Component {
 
