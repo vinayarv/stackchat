@@ -22,9 +22,6 @@ export default class ChannelList extends Component {
             <span className="badge">0</span>
           </Link>
         </li>
-        <li>
-          <Link to="/new-channel">Create a channel...</Link>
-        </li>
       </ul>
     );
   }
