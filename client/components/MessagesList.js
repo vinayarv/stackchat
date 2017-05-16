@@ -11,7 +11,7 @@ export default class MessagesList extends Component {
   }
 
   componentDidMount () {
-    axios.get('api/messages')
+    axios.get('/api/messages')
       .then(res => res.data)
       .then(messages => this.setState({ messages }));
   }
