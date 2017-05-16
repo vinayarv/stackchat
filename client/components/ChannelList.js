@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // hardcoded...for now!
 const RANDOM_CHANNEL = '/channels/1';
@@ -11,16 +11,16 @@ export default class ChannelList extends Component {
     return (
       <ul>
         <li>
-          <Link to={RANDOM_CHANNEL}>
+          <NavLink to={RANDOM_CHANNEL} activeClassName="active">
             <span># really random</span>
             <span className="badge">0</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to={GENERAL_CHANNEL}>
+          <NavLink to={GENERAL_CHANNEL} activeClassName="active">
             <span># generally speaking</span>
             <span className="badge">0</span>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     );
